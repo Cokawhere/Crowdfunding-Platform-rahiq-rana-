@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color:#4B5563;
+}
+
+.campaign-details-progress-container {
+      width: 100%;
+      background-color: #eee;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 8px;
+      margin: 8px 0; 
+}
+.campaign-details-big-container{
+    padding: 32px 96px;
+    width: 100%;
+}
+.campaign-details-big-container h1{
+    font-size: 36px;
+    font-weight: 800;
+}
+.campaign-and-campaigner-details{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.campaign-details-img, .campaign-details-campaign-updates{
+    width: 100%;
+}
+.campaign-rais-details-numbers-amount-price,
+.campaign-rais-details-numbers-amount-number{
+    font-size: 30px;
+    font-weight: 700;
+}
+.campaign-rais-details-numbers-amount-price{
+    color:#4F46E5;
+}
+.campaigner-details{
+    width: 30%;
+}
+.campaign-details{
+    width: 70%;
+}
+.campaign-rais-details-numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.campaign-rais-details{
+    width: 100%;
+    margin: 24px 0 32px 0;
+    padding: 24px;
+    background-color: #F9FAFB;
+    border-radius: 8px;
+
+}
+.campaign-details-CTAs{
+    display: flex;
+    gap:16px;
+}
+.campaign-details-CTAs-back{
+    background-color: #4F46E5;
+    height: 48px;
+    border:none;
+    border-radius: 8px;
+    flex: 1;
+    color: white;
+    font-weight: 700;
+}
+.campaign-details-CTAs-icon-buttons{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    background-color: #F9FAFB;
+}
+.campaign-details-about h4{
+    font-weight: 800;
+}
+
+
+.campaigner-details-container,
+.campaign-details-make-bledge{
+    border: 1px solid #E5E7EB;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.campaigner-details-name{
+    font-weight: 700;
+}
+.campaigner-details-pic-name{
+    display: flex;
+    gap:8px;
+}
+.contact-campaigner-btn, 
+.bledge-payment-btn, .campaign-details-reward-card-select-reward-btn{
+    width: 100%;
+    border-radius: 8px;
+    height: 48px;
+    border: 1px solid #E5E7EB;
+    background: white;
+    font-weight: 700;
+}
+.campaign-details-make-bledge h5, 
+.campaign-details-rewards h4,
+.campaign-details-campaign-updates h4{
+    font-weight: 800;
+}
+.make-bledge-bledge-amount input, 
+.dropdown button{
+    width: 100%;
+    height: 48px;
+    /* padding-left: 8px; */
+}
+.make-bledge-bledge-amount input{
+    padding-left: 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+.bledge-payment-btn{
+    background-color: #4F46E5;
+    color: white;
+}
+.bledge-security{
+    text-align: center;
+}
+
+.campaign-details-reward-card-reward-name, .campaign-details-campaign-updates-card-title{
+    font-size: 18px;
+    font-weight: 800;
+}
+.campaign-details-reward-cards{
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+.campaign-details-reward-card, 
+.campaign-details-campaign-updates-card{
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 24px;
+}
+.campaign-details-reward-card{
+    width: 33%;
+
+}
+.campaign-details-reward-card-select-reward-btn{
+    color: #4F46E5;
+    border: 1px solid #4F46E5 ;
+}
+.campaign-details-campaign-updates{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 48px;
+}
+
+.campaign-details-campaign-updates-card-date{
+    font-size: 14px;
+}
+.campaign-details-campaign-updates-card-read-more{
+    color: #4F46E5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+      .campaign-details, .campaigner-details{
+        width: 98% ;
+      }
+      .campaign-and-campaigner-details{
+        flex-direction: column;
+        row-gap: 24px;
+      }
+      .campaign-details-big-container{
+        padding: 32px 24px;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+      .campaign-details-reward-card{
+        width: 98%;
+      }
+      .campaign-details-reward-cards{
+        flex-direction: column;
+
+      }
+    
+}
