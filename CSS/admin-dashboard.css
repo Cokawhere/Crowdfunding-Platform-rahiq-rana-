@@ -13,8 +13,8 @@ nav>ul{
     display: flex;
     list-style: none;
     gap:24px;
-    justify-content: center;
     align-items: center;
+    padding-left: 0%;
 }
 li>a{
     color: #5e6570;
@@ -91,8 +91,14 @@ li>a{
         flex-direction: column;
         row-gap: 24px;
       }
-      .admin-dashboard-conatainer{
+      body{
         padding: 32px 24px;
     }
     
+}
+@media only screen and (max-width: 600px) {
+      
+    nav>ul{
+        display: none;
+    }
 }
