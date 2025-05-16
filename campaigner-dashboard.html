@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigner Dashboard</title>
+    <link href="CSS/campaigner-dashboard.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .progress-bar {
+      border-radius: 25px;
+      height: 100%;
+      width: 70%; 
+      background-color: #4F46E5;
+      text-align: center;
+      line-height: 8px;
+      transition: width 0.5s;
+    }
+</style>
+<body>
+    <div class="campaigner-dashboard-container">
+
+        <div class="campaigner-dashboard-first-row">
+            <div class="campaigner-dshboard-welcome">
+                <h4>Welcome back, John</h4>
+                <p>Manage your campaigns and track their progress</p>
+            </div>
+            <button class="create-new-campaign-btn"> + Create New Campaign </button>
+        </div>
+
+        <div class="campaigner-dashboard-statistics">
+            <div class="campaigner-dashboard-statistics-card">
+                <div class="campaigner-dashboard-statistics-card-first-row">
+                    <div class="campaigner-dashboard-statistics-card-icon-container">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="campaigner-dashboard-statistics-card-details">
+                        <div>Total Campaigns</div>
+                        <h4>3</h4>
+                    </div>
+                </div>
+                <p>+2 this month</p>
+            </div>
+            <div class="campaigner-dashboard-statistics-card">
+                <div class="campaigner-dashboard-statistics-card-first-row">
+                    <div class="campaigner-dashboard-statistics-card-icon-container">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="campaigner-dashboard-statistics-card-details">
+                        <div>Approved Campaigns</div>
+                        <h4>3</h4>
+                    </div>
+                </div>
+                <p>+2 this month</p>
+            </div>
+            <div class="campaigner-dashboard-statistics-card">
+                <div class="campaigner-dashboard-statistics-card-first-row">
+                    <div class="campaigner-dashboard-statistics-card-icon-container">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="campaigner-dashboard-statistics-card-details">
+                        <div>Total Supporters</div>
+                        <h4>3</h4>
+                    </div>
+                </div>
+                <p>+2 this month</p>
+            </div>
+        </div>
+
+        <div class="campainer-dashboard-created-campaigns">
+            <h4>Your Campaigns</h4>
+            <div class="campainer-dashboard-created-campaigns-cards">
+                <div class="campainer-dashboard-created-campaigns-card">
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p class="campaign-title">Save Local Wildlife</p>
+                        <div class="campaign-status-approved">Approved</div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p>Progress</p>
+                        <div class="pledge-progress">$35,000 / $50,000</div>
+                    </div>
+                    <div class="campaign-progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-btns">
+                        <button class="campaign-edit-btn"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button> 
+                        <button class="campaign-view-btn"><i class="fa fa-eye" aria-hidden="true"></i></i>View</button> 
+                        <button class="campaign-update-btn"><i class="fa fa-bullhorn" aria-hidden="true"></i>Update</button>
+                    </div>
+                </div>
+                <div class="campainer-dashboard-created-campaigns-card">
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p class="campaign-title">Save Local Wildlife</p>
+                        <div class="campaign-status-approved">Approved</div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p>Progress</p>
+                        <div class="pledge-progress">$35,000 / $50,000</div>
+                    </div>
+                    <div class="campaign-progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-btns">
+                        <button class="campaign-edit-btn"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button> 
+                        <button class="campaign-view-btn"><i class="fa fa-eye" aria-hidden="true"></i>View</button> 
+                        <button class="campaign-update-btn"><i class="fa fa-bullhorn" aria-hidden="true"></i>Update</button>
+                    </div>
+                </div>
+                <div class="campainer-dashboard-created-campaigns-card">
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p class="campaign-title">Save Local Wildlife</p>
+                        <div class="campaign-status-approved">Approved</div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p>Progress</p>
+                        <div class="pledge-progress">$35,000 / $50,000</div>
+                    </div>
+                    <div class="campaign-progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-btns">
+                        <button class="campaign-edit-btn"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button> 
+                        <button class="campaign-view-btn"><i class="fa fa-eye" aria-hidden="true"></i>View</button> 
+                        <button class="campaign-update-btn"><i class="fa fa-bullhorn" aria-hidden="true"></i>Update</button>
+                    </div>
+                </div>
+                <div class="campainer-dashboard-created-campaigns-card">
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p class="campaign-title">Save Local Wildlife</p>
+                        <div class="campaign-status-approved">Approved</div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-row">
+                        <p>Progress</p>
+                        <div class="pledge-progress">$35,000 / $50,000</div>
+                    </div>
+                    <div class="campaign-progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="campainer-dashboard-created-campaigns-card-btns">
+                        <button class="campaign-edit-btn"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button> 
+                        <button class="campaign-view-btn"><i class="fa fa-eye" aria-hidden="true"></i>View</button> 
+                        <button class="campaign-update-btn"><i class="fa fa-bullhorn" aria-hidden="true"></i>Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
