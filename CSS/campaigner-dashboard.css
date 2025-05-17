@@ -4,8 +4,59 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
     font-size: 16px;
-    color:#6B7280;;
+    color:#6B7280;
 }
+
+
+.crowdfund--navbar {
+    height: 65px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.071);
+
+}
+
+.navbar--logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #4F46E5;
+    margin-left: 30px;
+}
+
+.navbar--logo_text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.navbar--start--project {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e3950;
+    margin-bottom: 18px;
+}
+
+.navebar--search-input {
+    border-radius: 9999px;
+
+}
+
+.navbar--start--project {
+    padding-top: 11px;
+
+}
+
+.navbar-toggler {
+    margin-bottom: 20px !important;
+}
+
+
+
+
+
+
+
+
 .campaigner-dashboard-container{
     padding: 40px 96px;
 }
@@ -129,6 +180,112 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+}
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    padding: 40px 60px;
+    font-family: sans-serif;
+}
+
+.footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer__brand {
+    max-width: 300px;
+}
+
+.footer__logo {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer__description {
+    line-height: 1.6;
+}
+
+.footer__columns {
+    display: flex;
+    gap: 60px;
+}
+
+/* .footer__column {} */
+
+.footer__title {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__item {
+    margin-bottom: 8px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #94a3b8;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: white;
+}
+
+.footer__divider {
+    border: none;
+    border-top: 1px solid #334155;
+    margin-bottom: 20px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__icon img {
+    width: 28px;
+    height: 28px;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .footer__top,
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer__columns {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
 }
 
 
