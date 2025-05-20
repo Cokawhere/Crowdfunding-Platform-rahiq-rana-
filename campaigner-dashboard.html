@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigner Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="CSS/campaigner-dashboard.css" rel="stylesheet">
+    <script src="JS/campaigner-dashboard.js" defer></script>
+
+
+</head>
+<style>
+    .progress-bar {
+      border-radius: 25px;
+      height: 100%;
+      width: 70%; 
+      background-color: #4F46E5;
+      text-align: center;
+      line-height: 8px;
+      transition: width 0.5s;
+    }
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light crowdfund--navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand row" href="home.html">
+            <span class="navbar--logo col-6"></span>
+        <p class="navbar--logo_text col-6">CrowdFund</p> 
+        </a>
+            
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <div class="input-group mb-3 ">
+            <input type="text" class="form-control navebar--search-input" placeholder=" Search campaigns..." aria-label="Recipient’s username" aria-describedby="button-addon2">
+                </div>
+                </a>
+            </li>
+        
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="Assets/user.svg" alt="User"  width="30px">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="campaigner-dashboard-container">
+
+        <div class="campaigner-dashboard-first-row">
+            <div class="campaigner-dshboard-welcome">
+                <h4 id="user-welcome-msg"></h4>
+                <p>Manage your campaigns and track their progress</p>
+            </div>
+            <button class="create-new-campaign-btn" onclick="window.location.href='create-Campaign.html'"> + Create New Campaign </button>
+        </div>
+
+        <div class="campaigner-dashboard-statistics">
+            <div class="campaigner-dashboard-statistics-card">
+                <div class="campaigner-dashboard-statistics-card-first-row">
+                    <div class="campaigner-dashboard-statistics-card-icon-container">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="campaigner-dashboard-statistics-card-details">
+                        <div>Total Campaigns</div>
+                        <h4 id="totalCampaigns"></h4>
+                    </div>
+                </div>
+                <!-- <p>+2 this month</p> -->
+            </div>
+            <div class="campaigner-dashboard-statistics-card">
+                <div class="campaigner-dashboard-statistics-card-first-row">
+                    <div class="campaigner-dashboard-statistics-card-icon-container">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="campaigner-dashboard-statistics-card-details">
+                        <div>Approved Campaigns</div>
+                        <h4 id="approvedCampaigns"></h4>
+                    </div>
+                </div>
+                <!-- <p>+2 this month</p> -->
+            </div>
+            <div class="campaigner-dashboard-statistics-card">
+                <div class="campaigner-dashboard-statistics-card-first-row">
+                    <div class="campaigner-dashboard-statistics-card-icon-container">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="campaigner-dashboard-statistics-card-details">
+                        <div>Total Supporters</div>
+                        <h4 id="totalSupporter"></h4>
+                    </div>
+                </div>
+                <!-- <p>+2 this month</p> -->
+            </div>
+        </div>
+
+        <div class="campainer-dashboard-created-campaigns">
+            <h4>Your Campaigns</h4>
+            <div class="campainer-dashboard-created-campaigns-cards"> 
+                
+            </div> 
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <h2 class="footer__logo">CrowdFund</h2>
+                <p class="footer__description">
+                    Empowering creators and innovators <br />
+                    to bring their ideas to life through <br />
+                    community support.
+                </p>
+            </div>
+    
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h4 class="footer__title">Company</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Support</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Help Center</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Safety</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Resources</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Creator Guide</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Success Stories</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Statistics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <hr class="footer__divider" />
+    
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                © 2024 CrowdFund. All rights reserved.
+            </p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><img src="Assets/facebook.svg" alt="Facebook" /></a>
+                <a href="#" class="footer__icon"><img src="Assets/twiitter.svg" alt="Twitter" /></a>
+                <a href="#" class="footer__icon"><img src="Assets/instagram.svg" alt="Instagram" /></a>
+                <a href="#" class="footer__icon"><img src="Assets/linkedin.svg" alt="LinkedIn" /></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

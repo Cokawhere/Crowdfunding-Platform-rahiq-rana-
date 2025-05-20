@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #6B7280;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.crowdfund--navbar {
+    height: 65px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.071);
+
+}
+
+.navbar--logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #4F46E5;
+    margin-left: 30px;
+}
+
+.navbar--logo_text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.navbar--start--project {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e3950;
+    margin-bottom: 18px;
+}
+
+.navebar--search-input {
+    border-radius: 9999px;
+
+}
+
+.navbar--start--project {
+    padding-top: 11px;
+
+}
+
+.navbar-toggler {
+    margin-bottom: 20px !important;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../Assets/hero.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.hero>h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero-btns {
+    display: flex;
+    margin-top: 32px;
+}
+
+.hero-btns>button {
+    padding: 8px 24px;
+    height: 48px;
+    border: none;
+    border-radius: 100px;
+    margin-left: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 700;
+}
+
+.home-project-card-progress-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 8px;
+    margin: 8px 0;
+}
+
+.home-project-card {
+    width: 30%;
+    border: solid 1px #E5E6EB;
+    border-radius: 12px;
+    padding: 0%;
+}
+
+.home-project-card-text h4 {
+    color: black;
+}
+
+.home-project-card-text {
+    padding: 16px;
+}
+
+.home-project-card-picture {
+    width: 100%;
+}
+
+.home-project-card-btn {
+    background: #4F46E5;
+    height: 40px;
+    width: 150px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.home-project-card-rais-details,
+.home-project-card-forth-row,
+.home-project-card-forth-row-days-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-project-card-forth-row-days-left p {
+    margin: 0%
+}
+
+.home-projects-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 24px;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    padding: 40px 60px;
+    font-family: sans-serif;
+}
+
+.footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer__brand {
+    max-width: 300px;
+}
+
+.footer__logo {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer__description {
+    line-height: 1.6;
+}
+
+.footer__columns {
+    display: flex;
+    gap: 60px;
+}
+
+/* .footer__column {} */
+
+.footer__title {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__item {
+    margin-bottom: 8px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #94a3b8;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: white;
+}
+
+.footer__divider {
+    border: none;
+    border-top: 1px solid #334155;
+    margin-bottom: 20px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__icon img {
+    width: 28px;
+    height: 28px;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .footer__top,
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer__columns {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .home-project-card {
+        width: 90%;
+    }
+
+    .home-projects-cards {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 32px 24px;
+    }
+
+    .hero-btns {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .hero>h1 {
+        text-align: center;
+    }
+}
