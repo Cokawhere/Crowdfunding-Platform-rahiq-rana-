@@ -32,8 +32,8 @@ Campaign Details Page
 
 
 Rana:
-Anonymous User Flow and Filter campaigns using categories from Backer Role
-Admin Flow
+Anonymous User Flow, Admin Flow and Filter campaigns using categories from Backer Role
+
 
 Rahiq:
 Campaigner Flow
