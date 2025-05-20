@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #6B7280;
+    ;
+}
+
+.campaigner-dashboard-container {
+    padding: 40px 96px;
+}
+
+.create-new-campaign-btn {
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    height: 48px;
+    border: 1px solid #E5E7EB;
+    background: #4F46E5;
+    font-weight: 700;
+}
+
+.campaigner-dashboard-first-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.campaigner-dashboard-statistics-card-first-row {
+    display: flex;
+    gap: 8px;
+}
+
+.campaigner-dashboard-statistics-card-icon-container {
+    width: 48px;
+    height: 48px;
+    background-color: #E5E3FB;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campaigner-dashboard-statistics-card-icon-container i {
+    color: #4F46E5;
+}
+
+.campaigner-dashboard-statistics-card,
+.campainer-dashboard-created-campaigns-card {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 24px;
+
+    /* width: 33%; */
+}
+
+.campaigner-dashboard-statistics {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 32px;
+}
+
+.campaigner-dshboard-welcome h4,
+.campaigner-dashboard-statistics-card-details h4,
+.campainer-dashboard-created-campaigns h4,
+.campaign-title,
+.pledge-progress {
+    font-weight: 800;
+}
+
+
+.campaign-status-approved,
+.campaign-status-rejected,
+.campaign-status-pending {
+    height: 24px;
+    padding: 4px 8px;
+    font-weight: 600;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.campaign-status-approved {
+    color: #166534;
+    background-color: #DCFCE7;
+
+}
+
+.campaign-status-pending {
+    color: #9A3412;
+    background-color: #FFEDD5;
+
+}
+
+.campaign-status-rejected {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+.campainer-dashboard-created-campaigns-card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaign-progress-bar-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 8px;
+    margin: 8px 0;
+}
+
+.campaign-edit-btn,
+.campaign-view-btn,
+.campaign-update-btn {
+    color: #6B7280;
+    padding: 8px 16px;
+    border-radius: 8px;
+    height: 48px;
+    border: 1px solid #E5E7EB;
+    background: white;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.campaign-view-btn {
+    background-color: #4F46E5;
+    color: white;
+}
+
+.campaign-view-btn i {
+    color: white;
+}
+
+.campaign-edit-btn i,
+.campaign-view-btn i,
+.campaign-update-btn i {
+    margin-right: 4px;
+}
+
+.campaigner-dashboard-statistics,
+.campainer-dashboard-created-campaigns-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-top: 1px solid #E5E7EB;
+    font-size: 14px;
+    background-color: white;
+    color: #6B7280;
+    margin-top: 40px;
+}
+
+.footer__right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #6B7280;
+    transition: color 0.3s ease;
+}
+
+.footer__right a:hover {
+    color: #111827;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer__right a {
+        margin: 0 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .campaigner-dashboard-container {
+        padding: 32px 24px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .campaigner-dashboard-statistics,
+    .campainer-dashboard-created-campaigns-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .create-new-campaign-btn {
+        height: auto;
+    }
+}

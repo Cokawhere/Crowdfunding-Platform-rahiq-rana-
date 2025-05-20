@@ -1,0 +1,341 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "jone Admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "isActive": true,
+      "image": "Assets/adminpic.jpeg"
+    },
+    {
+      "id": "2",
+      "userName": "Ali Mohamed",
+      "email": "ali@example.com",
+      "password": "ali123",
+      "role": "campaigner",
+      "isActive": true,
+      "image": "Assets/mohamed ali.jpeg"
+    },
+    {
+      "id": "3",
+      "userName": "Rahiq Mohamed",
+      "email": "rahiqh123@gmail.com",
+      "password": "rahiq123",
+      "role": "backer",
+      "isActive": false,
+      "image": "Assets/rahiq.jpeg"
+    },
+    {
+      "id": "4",
+      "userName": "Rana",
+      "email": "rana@gmail.com",
+      "password": "rana123",
+      "role": "campaigner",
+      "isActive": true,
+      "image": "Assets/rana.jpeg"
+    },
+    {
+      "id": "5",
+      "userName": "Asmaa",
+      "email": "asmaa@gmail.com",
+      "password": "asmaa123",
+      "role": "backer",
+      "isActive": true,
+      "image": "Assets/asmaa.jpeg"
+    },
+    {
+      "id": "6",
+      "userName": "Aya",
+      "email": "aya@gmail.com",
+      "password": "aya123",
+      "role": "backer",
+      "isActive": true,
+      "image": "Assets/aya.jpeg"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "1",
+      "title": "COVI: Speech-Enabled Light & Open Source Smart Home Hub",
+      "description": "COVI is a beautifully designed lamp that includes a speech interface and open source smart home hub.",
+      "category": "Technology",
+      "goal": 11000,
+      "deadline": "2025-12-31",
+      "creatorId": 4,
+      "isApproved": true,
+      "image": "Assets/Speech-Enabled Light.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "ShadowBand Smart Ring *a connected device*",
+      "description": "ShadowBand™ is more than just jewelry it’s a stylish wearable device that helps you stay connected.",
+      "category": "Technology",
+      "goal": 12000,
+      "deadline": "2025-12-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "Assets/ShadowBand Smart Ring.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Introducing the smartGRINDER – the AI-powered spice grinder",
+      "description": "Cook like a pro with AI-powered seasoning for flawless flavor",
+      "category": "Technology",
+      "goal": 12000,
+      "deadline": "2025-05-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "Assets/Introducing the smartGRINDER.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "London: Through the eyes of children",
+      "description": "surprisingly written by kids and beautifully illustrated with watercolour by April Seaworth",
+      "category": "Art",
+      "goal": 14000,
+      "deadline": "2025-12-31",
+      "creatorId": 4,
+      "isApproved": true,
+      "image": "Assets/London Through the eyes of children.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Chicken Hero - A quirky, pixel platformer",
+      "description": "A retro-style adventure game.",
+      "category": "Games",
+      "goal": 15000,
+      "deadline": "2025-12-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "Assets/Chicken Hero.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Board Game Reboot",
+      "description": "Reviving a classic strategy board game.",
+      "category": "Games",
+      "goal": 16000,
+      "deadline": "2025-12-31",
+      "creatorId": 4,
+      "isApproved": true,
+      "image": "Assets/Board Game Reboot.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Minimalist Furniture",
+      "description": "Beautiful, simple furniture for modern homes.",
+      "category": "Design",
+      "goal": 17000,
+      "deadline": "2025-12-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "Assets/Minimalist Furniture.avif ",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "NeverBite™ – The Tuff Bite-Proof Pirate Puppet for Dogs",
+      "description": "A fearless crew of pirate misfits, built to protect yer hands from sharp puppy teeth. Set sail for bite-free playtime!.",
+      "category": "Design",
+      "goal": 18000,
+      "deadline": "2025-12-31",
+      "creatorId": 4,
+      "isApproved": true,
+      "image": "Assets/NeverBite™.avif ",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "The Virgo Killer: A Cautionary Tale",
+      "description": "An obsessive crime writer interviews a key witness to the killer but must leave his frightened daughter home alone at night..",
+      "category": "Film",
+      "goal": 19000,
+      "deadline": "2025-12-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "Assets/The Virgo Killer A Cautionary Tale.avif ",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Not So Bright",
+      "description": "Two unlucky brothers with a knack for making bad decisions embark on a hilariously chaotic journey filled with unpredictable outcomes.",
+      "category": "Film",
+      "goal": 100000,
+      "deadline": "2025-12-31",
+      "creatorId": 4,
+      "isApproved": true,
+      "image": "Assets/Not So Bright.avif ",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Cinderella at Midnight: A Solo Maze Adventure Card Game",
+      "description": "Build a shifting maze to explore as Cinderella completes tasks, attends the ball, and returns home—before the clock strikes midnight!",
+      "category": "Art",
+      "goal": 900,
+      "deadline": "2025-6-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": " Assets/Cinderella.png",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "The BARE Dutch Oven",
+      "description": "All the cooking performance. None of the drawbacks. Perfect heat distribution. Dramatically lighter. Completely maintenance-free.",
+      "category": "Technology",
+      "goal": 22361,
+      "deadline": "2025-7-31",
+      "creatorId": 2,
+      "isApproved": true,
+      "image": "Assets/The BARE Dutch Oven.avif",
+      "rewards": [
+        {
+          "id": 1,
+          "title": "Early Supporter",
+          "amount": 50
+        }
+      ]
+    }
+  ],
+  "pledges": [
+    {
+      "id": 1,
+      "campaignId": 1,
+      "backerId": 6,
+      "amount": 100.0,
+      "reward": "Premium Package",
+      "status": "successful",
+      "date": "2025-10-15"
+    },
+    {
+      "id": 2,
+      "campaignId": 1,
+      "backerId": 5,
+      "amount": 199.0,
+      "reward": "Ultimate Package",
+      "status": "processing",
+      "date": "2025-05-1"
+    },
+    {
+      "id": 2,
+      "campaignId": 1,
+      "backerId": 5,
+      "amount": 45.0,
+      "reward": "Early Bird Pack",
+      "status": "processing",
+      "date": "2025-05-15"
+    },
+    {
+      "id": 2,
+      "campaignId": 1,
+      "backerId": 5,
+      "amount": 100.0,
+      "reward": "Premium Package",
+      "status": "processing",
+      "date": "2025-03-3"
+    },
+    {
+      "id": 2,
+      "campaignId": 1,
+      "backerId": 5,
+      "amount": 199.0,
+      "reward": "Ultimate Package",
+      "status": "processing",
+      "date": "2025-12-1"
+    },
+    {
+      "id": 2,
+      "campaignId": 1,
+      "backerId": 5,
+      "amount": 45.0,
+      "reward": "Early Bird Pack",
+      "status": "processing",
+      "date": "2025-07-1"
+    }
+  ],
+  "updates": [
+    {
+      "id": "1",
+      "campaignId": 1,
+      "title": "Production Started",
+      "content": "We’ve started manufacturing the first batch!",
+      "date": "2025-05-17"
+    }
+  ]
+}
