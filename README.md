@@ -32,7 +32,7 @@ Campaign Details Page
 
 
 Rana:
-Anonymous User Flow
+Anonymous User Flow and Filter campaigns using categories from Backer Role
 Admin Flow
 
 Rahiq:
